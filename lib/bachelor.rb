@@ -1,6 +1,10 @@
 def get_first_name_of_season_winner(data, season)
   # code here
-  
+  data[season].each do |arr|
+    if arr["status"] == "Winner"
+      return arr["name"].spilt(" ").firts
+    end
+  end
 end
 
 def get_contestant_name(data, occupation)
