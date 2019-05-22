@@ -48,6 +48,12 @@ def get_average_age_for_season(data, season)
   age = 0
   num = 0
   data[season].each do |arr|
-    
-  
+    arr.each do |key, val|
+      age += arr["age"].to_f
+      num +=1
+    end
+  end
+  (age/count).round
 end
+      
+
