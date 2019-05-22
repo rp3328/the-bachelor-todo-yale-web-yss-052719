@@ -2,7 +2,7 @@ def get_first_name_of_season_winner(data, season)
   # code here
   data[season].each do |arr|
     if arr["status"] == "Winner"
-      return arr["name"].split(" ").firts
+      return arr["name"].split(" ").first
     end
   end
 end
